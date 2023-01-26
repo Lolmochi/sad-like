@@ -1,13 +1,552 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Like or sad</title>
+    <div class="bg-dark collapse" id="navbarHeader" style="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h1 class="text-white">About</h1>
+            <p class="text-muted">This album to see how you feel about this image.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </head>
   <body>
+    <main>
+
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Album Happy or sad.</h1>
+            <p class="lead text-muted">some picture is Happy some is sad</p>
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="../src/assets/68532.jpg" width="100%" height="1080" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn">
+                        Like (<span class="totalLikes">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes = 0;
+                    $(document).ready(function () {
+                    likes = 0;
+                    setLikes(likes);
+                    });
+                    
+                    $("body").on("click", ".likeBtn", function () {
+                    likes++;
+                    setLikes(likes);
+                    });
+                    
+                    function setLikes(count) {
+                    $(".totalLikes").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn">
+                      disLike (<span class="totaldisLikes">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes = 0;
+                  $(document).ready(function () {
+                  dislikes = 0;
+                  setdisLikes(dislikes);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn", function () {
+                  dislikes++;
+                  setdisLikes(dislikes);
+                  });
+                  
+                  function setdisLikes(count) {
+                  $(".totaldisLikes").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/anime_hd_girl-1920x1080.jpg" width="100%" height="1080" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></ร>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn1">
+                        Like (<span class="totalLikes1">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes1 = 0;
+                    $(document).ready(function () {
+                    likes1 = 0;
+                    setLikes1(likes1);
+                    });
+                    
+                    $("body").on("click", ".likeBtn1", function () {
+                    likes1++;
+                    setLikes1(likes1);
+                    });
+                    
+                    function setLikes1(count) {
+                    $(".totalLikes1").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn1">
+                      disLike (<span class="totaldisLikes1">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes1 = 0;
+                  $(document).ready(function () {
+                  dislikes1 = 0;
+                  setdisLikes1(dislikes1);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn1", function () {
+                  dislikes1++;
+                  setdisLikes1(dislikes1);
+                  });
+                  
+                  function setdisLikes1(count) {
+                  $(".totaldisLikes1").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/guy_alone_sad_215652_1920x1080.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn2">
+                        Like (<span class="totalLikes2">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes2 = 0;
+                    $(document).ready(function () {
+                    likes2 = 0;
+                    setLikes2(likes2);
+                    });
+                    
+                    $("body").on("click", ".likeBtn2", function () {
+                    likes2++;
+                    setLikes2(likes2);
+                    });
+                    
+                    function setLikes2(count) {
+                    $(".totalLikes2").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn2">
+                      disLike (<span class="totaldisLikes2">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes2 = 0;
+                  $(document).ready(function () {
+                  dislikes2 = 0;
+                  setdisLikes2(dislikes2);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn2", function () {
+                  dislikes2++;
+                  setdisLikes2(dislikes2);
+                  });
+                  
+                  function setdisLikes2(count) {
+                  $(".totaldisLikes2").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/Images-beautiful-girl-desktop-wallpapers-hd.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn3">
+                        Like (<span class="totalLikes3">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes3 = 0;
+                    $(document).ready(function () {
+                    likes3 = 0;
+                    setLikes3(likes3);
+                    });
+                    
+                    $("body").on("click", ".likeBtn3", function () {
+                    likes3++;
+                    setLikes3(likes3);
+                    });
+                    
+                    function setLikes3(count) {
+                    $(".totalLikes3").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn3">
+                      disLike (<span class="totaldisLikes3">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes3 = 0;
+                  $(document).ready(function () {
+                  dislikes3 = 0;
+                  setdisLikes3(dislikes3);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn3", function () {
+                  dislikes3++;
+                  setdisLikes3(dislikes3);
+                  });
+                  
+                  function setdisLikes3(count) {
+                  $(".totaldisLikes3").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/lonely-sad-sea-water-4k-ov-1920x1080.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></=>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn4">
+                        Like (<span class="totalLikes4">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes4 = 0;
+                    $(document).ready(function () {
+                    likes4 = 0;
+                    setLikes4(likes4);
+                    });
+                    
+                    $("body").on("click", ".likeBtn4", function () {
+                    likes4++;
+                    setLikes4(likes4);
+                    });
+                    
+                    function setLikes4(count) {
+                    $(".totalLikes4").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn4">
+                      disLike (<span class="totaldisLikes4">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes4 = 0;
+                  $(document).ready(function () {
+                  dislikes4 = 0;
+                  setdisLikes4(dislikes4);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn1", function () {
+                  dislikes1++;
+                  setdisLikes4(dislikes4);
+                  });
+                  
+                  function setdisLikes4(count) {
+                  $(".totaldisLikes4").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/sad-anime-girl-4k-dm-1920x1080.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn5">
+                        Like (<span class="totalLikes5">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes5 = 0;
+                    $(document).ready(function () {
+                    likes5 = 0;
+                    setLikes5(likes5);
+                    });
+                    
+                    $("body").on("click", ".likeBtn5", function () {
+                    likes5++;
+                    setLikes5(likes5);
+                    });
+                    
+                    function setLikes5(count) {
+                    $(".totalLikes5").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn5">
+                      disLike (<span class="totaldisLikes5">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes5 = 0;
+                  $(document).ready(function () {
+                  dislikes5 = 0;
+                  setdisLikes5(dislikes5);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn5", function () {
+                  dislikes5++;
+                  setdisLikes5(dislikes5);
+                  });
+                  
+                  function setdisLikes5(count) {
+                  $(".totaldisLikes5").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/sad-like/src/assets/sad-day-art-9j-1920x1080.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn6">
+                        Like (<span class="totalLikes6">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes6 = 0;
+                    $(document).ready(function () {
+                    likes6 = 0;
+                    setLikes6(likes6);
+                    });
+                    
+                    $("body").on("click", ".likeBtn6", function () {
+                    likes6++;
+                    setLikes6(likes6);
+                    });
+                    
+                    function setLikes6(count) {
+                    $(".totalLikes6").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn6">
+                      disLike (<span class="totaldisLikes6">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes6 = 0;
+                  $(document).ready(function () {
+                  dislikes6 = 0;
+                  setdisLikes6(dislikes6);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn6", function () {
+                  dislikes6++;
+                  setdisLikes6(dislikes6);
+                  });
+                  
+                  function setdisLikes6(count) {
+                  $(".totaldisLikes6").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/screen-0 (1).jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn7">
+                        Like (<span class="totalLikes7">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes7 = 0;
+                    $(document).ready(function () {
+                    likes7 = 0;
+                    setLikes7(likes7);
+                    });
+                    
+                    $("body").on("click", ".likeBtn7", function () {
+                    likes7++;
+                    setLikes7(likes7);
+                    });
+                    
+                    function setLikes7(count) {
+                    $(".totalLikes7").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn7">
+                      disLike (<span class="totaldisLikes7">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes7 = 0;
+                  $(document).ready(function () {
+                  dislikes1 = 0;
+                  setdisLikes7(dislikes7);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn7", function () {
+                  dislikes1++;
+                  setdisLikes7(dislikes7);
+                  });
+                  
+                  function setdisLikes7(count) {
+                  $(".totaldisLikes7").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/../4/sad-like/src/assets/screen-0.jpg" width="100%" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button class="likeBtn8">
+                        Like (<span class="totalLikes8">0</span>)
+                      </button>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                      <script type="text/javascript">
+                        let likes8 = 0;
+                    $(document).ready(function () {
+                    likes8 = 0;
+                    setLikes8(likes1);
+                    });
+                    
+                    $("body").on("click", ".likeBtn8", function () {
+                    likes1++;
+                    setLikes1(likes1);
+                    });
+                    
+                    function setLikes1(count) {
+                    $(".totalLikes8").text(count);
+                    }
+                    </script>
+                    <div class="as-console-wrapper"><div class="as-console"></div></div>
+
+                    <button class="dislikeBtn8">
+                      disLike (<span class="totaldisLikes8">0</span>)
+                    </button>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                      let dislikes8 = 0;
+                  $(document).ready(function () {
+                  dislikes8 = 0;
+                  setdisLikes8(dislikes8);
+                  });
+                  
+                  $("body").on("click", ".dislikeBtn8", function () {
+                  dislikes8++;
+                  setdisLikes8(dislikes8);
+                  });
+                  
+                  function setdisLikes8(count) {
+                  $(".totaldisLikes8").text(count);
+                  }
+                  </script>
+                  <div class="as-console-wrapper"><div class="as-console"></div></div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+    
+    
+        <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+          
+      
+    
+    </body></html>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
